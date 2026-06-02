@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>ADBD0783-P3-DiseñoWEB/colecciones (Historial Clínico)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap">
+    
+    <style>
+        body { font-family: "Poppins", sans-serif; background-color: #f4f7f4; }
+        
+        .logo-header { 
+            max-height: 70px; 
+            width: auto; 
+            transition: transform 0.3s;
+        }
+
+        .logo-header:hover {
+            transform: scale(1.1);
+        }
+
+        .header-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Ajuste para que la tabla se vea alineada y estilizada */
+        .tabla-historial th, .tabla-historial td {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="w3-container w3-light-green w3-padding-24 w3-card-2">
+    <div class="w3-row-padding header-flex">
+        
+        <div class="w3-col s2 m2 w3-left-align">
+            <img src="logo.jpg" alt="Logo Izquierda" class="w3-image logo-header w3-circle">
+        </div>
+
+        <div class="w3-col s8 m8 w3-center">
+            <h1 class="w3-xlarge m3-hide-small"><b>CLÍNICA VETERINARIA</b></h1>
+            <p class="w3-medium w3-hide-small" style="margin-top:-10px;">Cuidado profesional para tus mascotas</p>
+        </div>
+
+        <div class="w3-col s2 m2 w3-right-align">
+            <img src="logo.jpg" alt="Logo Derecha" class="w3-image logo-header w3-circle">
+        </div>
+
+    </div>
+</header>
+
+<nav class="w3-bar w3-black w3-card">
+    <a href="ADBD0783-P3-DiseñoWEBcolecciones.html" class="w3-bar-item w3-button w3-mobile w3-hover-green">Inicio</a>
+    <a href="veterinarios.html" class="w3-bar-item w3-button w3-mobile w3-hover-green">Veterinarios</a>
+    <a href="propietarios.html" class="w3-bar-item w3-button w3-mobile w3-hover-green">Propietarios</a>
+    <a href="mascotas.html" class="w3-bar-item w3-button w3-mobile w3-hover-green">Mascotas</a>
+    <a href="historial.html" class="w3-bar-item w3-button w3-mobile w3-green">Historial Clínico</a>
+    <a href="estudios.html" class="w3-bar-item w3-button w3-mobile w3-hover-green">Estudios</a>
+</nav>
+
+<div class="w3-container w3-padding-32">
+    <div class="w3-card-4 w3-white w3-round-large" style="max-width:900px; margin:auto; overflow-x:auto;">
+        
+        <div class="w3-container w3-green w3-round-large">
+            <h2 class="w3-center"><b>HISTORIAL CLÍNICO</b></h2>
+        </div>
+        
+        <div class="w3-padding-16">
+            <table class="w3-table-all w3-hoverable tabla-historial">
+                <thead>
+                    <tr class="w3-dark-grey">
+                        <th>Mascota (ID)</th>
+                        <th>Veterinario (ID)</th>
+                        <th>Estudio / Clave</th>
+                        <th>Fecha de Consulta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>10</td>
+                        <td>V-70</td>
+                        <td>10-09-2025</td>
+                    </tr>
+                    <tr>
+                        <td>0101</td>
+                        <td>30</td>
+                        <td>V-100</td>
+                        <td>13-04-2025</td>
+                    </tr>
+                    <tr>
+                        <td>0102</td>
+                        <td>40</td>
+                        <td>V-10</td>
+                        <td>12-06-2025</td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>30</td>
+                        <td>V-100</td>
+                        <td>03-02-2026</td>
+                    </tr>
+                    <tr>
+                        <td>0201</td>
+                        <td>80</td>
+                        <td>V-20</td>
+                        <td>05-02-2026</td>
+                    </tr>
+                    <tr>
+                        <td>0301</td>
+                        <td>60</td>
+                        <td>V-50</td>
+                        <td>18-04-2025</td>
+                    </tr>
+                    <tr>
+                        <td>0302</td>
+                        <td>90</td>
+                        <td>V-90</td>
+                        <td>04-10-2025</td>
+                    </tr>
+                    <tr>
+                        <td>0402</td>
+                        <td>40</td>
+                        <td>V-10</td>
+                        <td>06-01-2026</td>
+                    </tr>
+                    <tr>
+                        <td>0501</td>
+                        <td>40</td>
+                        <td>V-10</td>
+                        <td>13-09-2025</td>
+                    </tr>
+                    <tr>
+                        <td>0601</td>
+                        <td>10</td>
+                        <td>V-40</td>
+                        <td>22-01-2026</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+</div>
+
+<footer class="w3-container w3-green w3-padding-16 w3-center">
+    <p><b>Adame Durán Brenda Denis</b> | 0783 4°J Programación</p>
+    <p class="w3-small">© 2026 Veterinaria Para Todos</p>
+</footer>
+
+</body>
+</html>

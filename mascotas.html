@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>ADBD0783-P3-DiseñoWEB/colecciones (Mascotas)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap">
+    
+    <style>
+        body { font-family: "Poppins", sans-serif; background-color: #f4f7f4; }
+        
+        .logo-header { 
+            max-height: 70px; 
+            width: auto; 
+            transition: transform 0.3s;
+        }
+
+        .logo-header:hover {
+            transform: scale(1.1);
+        }
+
+        .header-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Ajuste para que la tabla se vea alineada y estilizada */
+        .tabla-mascotas th, .tabla-mascotas td {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="w3-container w3-light-green w3-padding-24 w3-card-2">
+    <div class="w3-row-padding header-flex">
+        
+        <div class="w3-col s2 m2 w3-left-align">
+            <img src="logo.jpg" alt="Logo Izquierda" class="w3-image logo-header w3-circle">
+        </div>
+
+        <div class="w3-col s8 m8 w3-center">
+            <h1 class="w3-xlarge m3-hide-small"><b>CLÍNICA VETERINARIA</b></h1>
+            <p class="w3-medium w3-hide-small" style="margin-top:-10px;">Cuidado profesional para tus mascotas</p>
+        </div>
+
+        <div class="w3-col s2 m2 w3-right-align">
+            <img src="logo.jpg" alt="Logo Derecha" class="w3-image logo-header w3-circle">
+        </div>
+
+    </div>
+</header>
+
+<nav class="w3-bar w3-black w3-card">
+    <a href="ADBD0783-P3-DiseñoWEBcolecciones.html" class="w3-bar-item w3-button w3-mobile w3-hover-green">Inicio</a>
+    <a href="veterinarios.html" class="w3-bar-item w3-button w3-mobile w3-hover-green">Veterinarios</a>
+    <a href="propietarios.html" class="w3-bar-item w3-button w3-mobile w3-hover-green">Propietarios</a>
+    <a href="mascotas.html" class="w3-bar-item w3-button w3-mobile w3-green">Mascotas</a>
+    <a href="historial.html" class="w3-bar-item w3-button w3-mobile w3-hover-green">Historial Clínico</a>
+    <a href="estudios.html" class="w3-bar-item w3-button w3-mobile w3-hover-green">Estudios</a>
+</nav>
+
+<div class="w3-container w3-padding-32">
+    <div class="w3-card-4 w3-white w3-round-large" style="max-width:1100px; margin:auto; overflow-x:auto;">
+        
+        <div class="w3-container w3-green w3-round-large">
+            <h2 class="w3-center"><b>REGISTRO DE MASCOTAS</b></h2>
+        </div>
+        
+        <div class="w3-padding-16">
+            <table class="w3-table-all w3-hoverable tabla-mascotas">
+                <thead>
+                    <tr class="w3-dark-grey">
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Especie / Raza</th>
+                        <th>Edad</th>
+                        <th>Género</th>
+                        <th>Peso</th>
+                        <th>Dueño (ID)</th>
+                        <th>Vacunas</th>
+                        <th>Características</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0001</td>
+                        <td>Paco</td>
+                        <td>Hámster</td>
+                        <td>2 años</td>
+                        <td>Macho</td>
+                        <td>40 gr</td>
+                        <td>101</td>
+                        <td>Sin vacunas</td>
+                        <td>Pequeño, comelón</td>
+                    </tr>
+                    <tr>
+                        <td>0101</td>
+                        <td>Manolo</td>
+                        <td>Pitbull</td>
+                        <td>6 años</td>
+                        <td>Macho</td>
+                        <td>16 Kg</td>
+                        <td>102</td>
+                        <td>Moquillo, rabia, parvovirus canino</td>
+                        <td>Cariñoso, tranquilo, grande</td>
+                    </tr>
+                    <tr>
+                        <td>0102</td>
+                        <td>Queso</td>
+                        <td>Gato mestizo</td>
+                        <td>5 años</td>
+                        <td>Macho</td>
+                        <td>4 Kg</td>
+                        <td>103</td>
+                        <td>Triple Felina, rabia</td>
+                        <td>Tranquilo, cariñoso</td>
+                    </tr>
+                    <tr>
+                        <td>0201</td>
+                        <td>Kira</td>
+                        <td>Gato Persa</td>
+                        <td>2 años</td>
+                        <td>Hembra</td>
+                        <td>5 Kg</td>
+                        <td>104</td>
+                        <td>Triple Felina, rabia</td>
+                        <td>Grande, tímida</td>
+                    </tr>
+                    <tr>
+                        <td>0301</td>
+                        <td>Canela</td>
+                        <td>Cuyo</td>
+                        <td>1 año</td>
+                        <td>Hembra</td>
+                        <td>800 gr</td>
+                        <td>105</td>
+                        <td>Sin vacunas</td>
+                        <td>Tranquila, pequeña</td>
+                    </tr>
+                    <tr>
+                        <td>0302</td>
+                        <td>Roro</td>
+                        <td>Gato Siamés</td>
+                        <td>4 años</td>
+                        <td>Hembra</td>
+                        <td>5 Kg</td>
+                        <td>106</td>
+                        <td>Rabia</td>
+                        <td>Tranquilo, mediano</td>
+                    </tr>
+                    <tr>
+                        <td>0401</td>
+                        <td>Randal</td>
+                        <td>Hurón</td>
+                        <td>3 años</td>
+                        <td>Macho</td>
+                        <td>1.5 Kg</td>
+                        <td>107</td>
+                        <td>Moquillo canino, rabia</td>
+                        <td>Largo, energético</td>
+                    </tr>
+                    <tr>
+                        <td>0402</td>
+                        <td>Patricio</td>
+                        <td>Golden Retriever</td>
+                        <td>2 años</td>
+                        <td>Macho</td>
+                        <td>30 Kg</td>
+                        <td>108</td>
+                        <td>Rabia, hepatitis, moquillo, parvovirus</td>
+                        <td>Cariñoso, grande</td>
+                    </tr>
+                    <tr>
+                        <td>0501</td>
+                        <td>Pancracio</td>
+                        <td>Conejo</td>
+                        <td>1 año</td>
+                        <td>Macho</td>
+                        <td>3 Kg</td>
+                        <td>109</td>
+                        <td>Mixomatosis, enfermedad hemorrágica viral</td>
+                        <td>Agresivo, dormilón</td>
+                    </tr>
+                    <tr>
+                        <td>0601</td>
+                        <td>Astrid</td>
+                        <td>Tortuga de agua</td>
+                        <td>6 meses</td>
+                        <td>Hembra</td>
+                        <td>50 gr</td>
+                        <td>110</td>
+                        <td>Sin vacunas</td>
+                        <td>Tranquila, pequeña</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+</div>
+
+<footer class="w3-container w3-green w3-padding-16 w3-center">
+    <p><b>Adame Durán Brenda Denis</b> | 0783 4°J Programación</p>
+    <p class="w3-small">© 2026 Veterinaria Para Todos</p>
+</footer>
+
+</body>
+</html>

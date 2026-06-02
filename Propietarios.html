@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>ADBD0783-P3-DiseñoWEB/colecciones (Propietarios)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap">
+    
+    <style>
+        body { font-family: "Poppins", sans-serif; background-color: #f4f7f4; }
+        
+        .logo-header { 
+            max-height: 70px; 
+            width: auto; 
+            transition: transform 0.3s;
+        }
+
+        .logo-header:hover {
+            transform: scale(1.1);
+        }
+
+        .header-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Ajuste para que la tabla se vea alineada y estilizada */
+        .tabla-propietarios th, .tabla-propietarios td {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="w3-container w3-light-green w3-padding-24 w3-card-2">
+    <div class="w3-row-padding header-flex">
+        
+        <div class="w3-col s2 m2 w3-left-align">
+            <img src="logo.jpg" alt="Logo Izquierda" class="w3-image logo-header w3-circle">
+        </div>
+
+        <div class="w3-col s8 m8 w3-center">
+            <h1 class="w3-xlarge m3-hide-small"><b>CLÍNICA VETERINARIA</b></h1>
+            <p class="w3-medium w3-hide-small" style="margin-top:-10px;">Cuidado profesional para tus mascotas</p>
+        </div>
+
+        <div class="w3-col s2 m2 w3-right-align">
+            <img src="logo.jpg" alt="Logo Derecha" class="w3-image logo-header w3-circle">
+        </div>
+
+    </div>
+</header>
+
+<nav class="w3-bar w3-black w3-card">
+    <a href="ADBD0783-P3-DiseñoWEBcolecciones.html" class="w3-bar-item w3-button w3-mobile w3-hover-green">Inicio</a>
+    <a href="veterinarios.html" class="w3-bar-item w3-button w3-mobile w3-hover-green">Veterinarios</a>
+    <a href="propietarios.html" class="w3-bar-item w3-button w3-mobile w3-green">Propietarios</a>
+    <a href="mascotas.html" class="w3-bar-item w3-button w3-mobile w3-hover-green">Mascotas</a>
+    <a href="historial.html" class="w3-bar-item w3-button w3-mobile w3-hover-green">Historial Clínico</a>
+    <a href="estudios.html" class="w3-bar-item w3-button w3-mobile w3-hover-green">Estudios</a>
+</nav>
+
+<div class="w3-container w3-padding-32">
+    <div class="w3-card-4 w3-white w3-round-large" style="max-width:1100px; margin:auto; overflow-x:auto;">
+        
+        <div class="w3-container w3-green w3-round-large">
+            <h2 class="w3-center"><b>REGISTRO DE PROPIETARIOS</b></h2>
+        </div>
+        
+        <div class="w3-padding-16">
+            <table class="w3-table-all w3-hoverable tabla-propietarios">
+                <thead>
+                    <tr class="w3-dark-grey">
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Mascota</th>
+                        <th>Dirección</th>
+                        <th>Teléfono</th>
+                        <th>Tel. Emergencia</th>
+                        <th>Correo Electrónico</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Pancho Villa</td>
+                        <td>0001 (Paco)</td>
+                        <td>Calle 13 #1845</td>
+                        <td>555-111-1111</td>
+                        <td>555-656-8432</td>
+                        <td>panchito19@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Ariadna Grande</td>
+                        <td>0101 (Manolo)</td>
+                        <td>Calle 11 #2987</td>
+                        <td>555-192-3061</td>
+                        <td>555-243-2659</td>
+                        <td>ari@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Edith Barraza</td>
+                        <td>0102 (Queso)</td>
+                        <td>Calle S #1341</td>
+                        <td>555-581-3853</td>
+                        <td>555-742-3859</td>
+                        <td>edithbarraza1155@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>104</td>
+                        <td>Osvaldo Montes</td>
+                        <td>0201 (Kira)</td>
+                        <td>Calle 7 #1824</td>
+                        <td>555-731-4631</td>
+                        <td>555-543-8237</td>
+                        <td>osvaldo@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>105</td>
+                        <td>Ricardo Velez</td>
+                        <td>0301 (Canela)</td>
+                        <td>Calle 20 #7684</td>
+                        <td>555-864-5843</td>
+                        <td>555-392-1412</td>
+                        <td>ricardogmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>106</td>
+                        <td>Dayana Madrid</td>
+                        <td>0302 (Roro)</td>
+                        <td>Calle 17 #8764</td>
+                        <td>555-111-6666</td>
+                        <td>555-538-6664</td>
+                        <td>dani@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>107</td>
+                        <td>Mariana Sifuentes</td>
+                        <td>0401 (Randal)</td>
+                        <td>Calle 19 #3764</td>
+                        <td>555-474-5416</td>
+                        <td>555-128-3425</td>
+                        <td>mar@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>108</td>
+                        <td>Miranda Quintana</td>
+                        <td>0402 (Patricio)</td>
+                        <td>Calle 26 #2060</td>
+                        <td>555-757-5813</td>
+                        <td>555-568-5201</td>
+                        <td>miri@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>109</td>
+                        <td>Valeria Montes</td>
+                        <td>0501 (Pancracio)</td>
+                        <td>Calle 61 #1614</td>
+                        <td>555-834-6567</td>
+                        <td>555-326-4237</td>
+                        <td>val@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>110</td>
+                        <td>Rocío Casas</td>
+                        <td>0601 (Astrid)</td>
+                        <td>Calle 28 #1920</td>
+                        <td>555-123-4567</td>
+                        <td>555-338-0783</td>
+                        <td>roci@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+</div>
+
+<footer class="w3-container w3-green w3-padding-16 w3-center">
+    <p><b>Adame Durán Brenda Denis</b> | 0783 4°J Programación</p>
+    <p class="w3-small">© 2026 Veterinaria Para Todos</p>
+</footer>
+
+</body>
+</html>
